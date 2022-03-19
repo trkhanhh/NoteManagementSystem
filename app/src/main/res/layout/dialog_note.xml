@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FAF9F9">
+
+
+    <EditText
+        android:hint="Enter note name"
+        android:paddingVertical="15dp"
+        android:id="@+id/EditTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnterCatelogy"
+        android:layout_below="@+id/EditTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnterPriority"
+        android:layout_below="@+id/SpinnterCatelogy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnterStatus"
+        android:layout_below="@+id/SpinnterPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:hint="Select plan date"
+        android:layout_below="@+id/SpinnterStatus"
+        android:id="@+id/TextViewDate"
+        android:layout_width="250dp"
+        android:layout_height="30dp"/>
+    <Button
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="..."
+        android:id="@+id/ButtonDate"
+        android:layout_below="@id/SpinnterStatus"
+        android:layout_alignParentRight="true"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+
+        android:id="@+id/ButtonAddNote"
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonDate"/>
+
+    <Button
+
+        android:id="@+id/ButtonCancelNote"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonDate"
+        android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

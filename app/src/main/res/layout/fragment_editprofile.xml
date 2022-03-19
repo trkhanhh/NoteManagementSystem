@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EditProfile.EditProfileFragment"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Edit profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextFistName"
+        android:hint="Enter your fist name"
+        android:layout_below="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextLastName"
+        android:hint="Enter your last name"
+        android:layout_below="@+id/EditTextFistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextEmail"
+        android:hint="Enter your email"
+        android:layout_below="@+id/EditTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonChangeName"
+        android:layout_below="@id/EditTextEmail"
+        android:text="Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonHome"
+        android:layout_below="@id/EditTextEmail"
+        android:text="Home"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

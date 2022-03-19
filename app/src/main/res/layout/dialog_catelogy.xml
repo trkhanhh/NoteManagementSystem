@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FAF9F9">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Catelogy Form"
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:paddingVertical="15dp"
+        android:layout_below="@id/TextView1"
+        android:id="@+id/EditTextNameCatelogy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/ButtonAddCatelogy"
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextNameCatelogy"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/ButtonCancel"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextNameCatelogy"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

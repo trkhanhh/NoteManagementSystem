@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Change your password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextMailr"
+        android:hint="Enter current password"
+        android:layout_below="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextPasswordr"
+        android:hint="Enter new password"
+        android:layout_below="@+id/EditTextMailr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/ConfirmPasswordr"
+        android:hint="Enter password again"
+        android:layout_below="@+id/EditTextPasswordr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonSignIn"
+        android:layout_below="@id/ConfirmPasswordr"
+        android:text="Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonSignUpr"
+        android:layout_below="@id/ConfirmPasswordr"
+        android:text="Home"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</RelativeLayout>

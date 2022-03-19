@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/FormLogin">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Note Management System"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextMail"
+        android:hint="Enter your email"
+        android:layout_below="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/EditTextPassword"
+        android:hint="Enter your password"
+        android:layout_below="@+id/EditTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/ChecboxRemember"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/EditTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"/>
+
+    <Button
+        android:id="@+id/ButtonSignIn"
+        android:layout_below="@id/ChecboxRemember"
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/ButtonExit"
+        android:layout_below="@id/ChecboxRemember"
+        android:layout_alignParentRight="true"
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/icon_add" />
+
+</RelativeLayout>
+
